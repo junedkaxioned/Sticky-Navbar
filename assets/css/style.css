@@ -114,19 +114,6 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-.active {
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-header.active  a {
-  color: #000;
-}
-
-header.active .navbar {
-  padding: 10px 0;
-}
-
 .navbar {
   padding: 10px 0;
   display: flex;
@@ -150,6 +137,12 @@ h1 { font-size: 20px; }
   justify-content: center
 }
 
+.active {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+
 .menuList {
   padding: 7px 12px;
   color: #fff;
@@ -157,9 +150,23 @@ h1 { font-size: 20px; }
   transition: all 0.3s ease-in-out;
 }
 
-.current, 
+.current,
+.logo:hover, 
 .menuList:hover {
   color: #c0392b;
+}
+
+header.active .logo,
+header.active .menuList { 
+  color: #000; 
+}
+
+header.active .navbar { padding: 4px 0; }
+
+header.active .current,
+header.active .logo:hover, 
+header.active .menuList:hover {
+ color: #c0392b; 
 }
 
 .bannerSection {
